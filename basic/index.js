@@ -28,4 +28,20 @@ gsap.from("#box-2", {
   duration: 1.5 
 });
 
+
+// Start aur end dono define karo
+gsap.fromTo(".box", 
+  {
+    // Starting properties
+    x: -200,
+    opacity: 0
+  },
+  {
+    // Ending properties
+    x: 200,
+    opacity: 1,
+    duration: 2
+  }
+);
+
 // Current position: opacity 1, y: 0 pe aa jayega
