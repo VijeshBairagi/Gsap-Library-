@@ -1,8 +1,6 @@
 let initalPath = `M 10 100 Q 710 100 1420 100`;
 let finalPath = `M 10 100 Q 710 100 1420 100`;
-
 let string = document.querySelector(".string")
-
 
 string.addEventListener("mousemove", (dets) => {
   initalPath = `M 10 100 Q ${dets.x} ${dets.y} 1420 100`
@@ -11,7 +9,6 @@ string.addEventListener("mousemove", (dets) => {
     duration: 0.3,
     ease: "power1.out"
   })
-  console.log("inital path ", initalPath);
 })
 
 string.addEventListener("mouseleave", () => {
